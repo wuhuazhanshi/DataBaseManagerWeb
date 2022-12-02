@@ -963,12 +963,11 @@
               <li th:each="product : ${product_list}" >
                 <div class="product-grid">
                   <div class="product-item">
-                      <img src="assets/images/格林童话.png" alt="">
-<!--                    <img th:src="${product.getImgurl()}" alt="product-img"/>-->
+                    <img th:src="${product.getImgurl()}" alt="product-img"/>
                   </div>
                   <div class="product-text-rs">
-                    <h3 th:text="${product.getProductname()}">格林童话</h3>
-                    <h6 th:text="${product.getProductintroduction()}">格林童话+安徒生童话+伊索寓言+一千零一夜同步语文儿童名著(彩图注音版)全4册 了传统文化精髓与当代教育理念</h6>
+                    <h3 th:text="${product.getProductname()}">Dining Chair</h3>
+                    <h6 th:text="${product.getProductintroduction()}">Simply dummy text of the printing</h6>
                     <p th:inline="text"><span th:text="${product.getOriginalprice()}"></span> [[${product.getCurrentprice()}]]</p>
                   </div>
                 </div>

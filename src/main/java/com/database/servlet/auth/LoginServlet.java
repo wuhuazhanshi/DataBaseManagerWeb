@@ -3,6 +3,7 @@ package com.database.servlet.auth;
 import com.database.service.UserService;
 import com.database.service.impl.UserServiceImpl;
 import com.database.utils.ThymeleafUtil;
+import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

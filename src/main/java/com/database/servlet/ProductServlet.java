@@ -28,7 +28,6 @@ public class ProductServlet extends HttpServlet {
         context.setVariable("username", user.getUsername());
         context.setVariable("product_list", service.getProductList());
         ThymeleafUtil.process("product.html",context,resp.getWriter());
-
     }
 
     @Override

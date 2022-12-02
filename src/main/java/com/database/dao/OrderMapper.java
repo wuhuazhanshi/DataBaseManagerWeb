@@ -7,12 +7,13 @@ import org.apache.ibatis.annotations.Select;
 import java.util.List;
 
 public interface OrderMapper {
-    @Select("select * from t_order")
+    @Select("select * from sale")
     List<Order> getOrderList();
 
-    @Select("select * from t_order where consumerid = #{username} or businessid = #{username}")
-    List<Order> getOrderListByUsername(@Param("username") String username);
+    @Select("select * from sale where customer_id = #{customerid} ")
+    List<Order> getOrderListByUsername(@Param("customerid") String username);
 
-    @Select("select * from t_order where orderid = #{Orderid} or productname = #{Orderid}")
-    List<Order> getOrderListByOrderid(@Param("Orderid") String Orderid);
+    @Select("select * from sale where sale_id = #{saleid}")
+    List<Order> getOrderListByOrderid(@Param("saleid") String Orderid);
+
 }

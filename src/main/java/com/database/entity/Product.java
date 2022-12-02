@@ -4,10 +4,13 @@ import lombok.Data;
 
 @Data
 public class Product {
-    String productid;
-    String productname;
-    String productintroduction;
-    int originalprice;
+//    ----book
+    String bookisbn;
+    String bookname;
+    String bookpubdate;
+    int bookprice;
+    int bookstock;
     int currentprice;
-    String imgurl;
+    String authorid;
+    String publisherid;
 }
